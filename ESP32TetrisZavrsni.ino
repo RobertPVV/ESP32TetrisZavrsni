@@ -289,10 +289,10 @@ bool checkHorizontalCollision(int Board[width][height+1],int piece[][4],int curr
   int x2=(piece[currentRotation][i]+direction)%(width);
   int y1=(piece[currentRotation][i])/(width);
   int y2=(piece[currentRotation][i]+direction)/(width);
-  if(y2!=y1){//check for collision with border
+  if(y2!=y1){
     return true;
   }
-  if(Board[x2][y2]<7){//check for collision with locked pieces
+  if(Board[x2][y2]<7){
     return true;
   }
   }
